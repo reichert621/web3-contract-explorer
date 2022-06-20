@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#__next {
+  min-height: 100%;
+  width: 100%;
+}
+
+#__next {
+  display: flex;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#Canvas--gradient {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.Text--rainbow {
+  background: linear-gradient(
+    110.78deg,
+    rgb(118, 230, 80) -1.13%,
+    rgb(249, 214, 73) 15.22%,
+    rgb(240, 142, 53) 32.09%,
+    rgb(236, 81, 87) 48.96%,
+    rgb(255, 24, 189) 67.94%,
+    rgb(26, 75, 255) 85.34%,
+    rgb(98, 216, 249) 99.57%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  -moz-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+}
+
+.Text--shadowed {
+  text-shadow: 0 1px 1px rgb(0 0 0);
+}
+
+.Text--subtitle {
+  font-family: "Trebuchet MS";
+  color: #ffaa00;
+  text-shadow: 0 2px 1px rgb(0 0 0);
+}
+
+.Background--rainbow {
+  background: linear-gradient(
+    110.78deg,
+    rgb(118, 230, 80) -1.13%,
+    rgb(249, 214, 73) 15.22%,
+    rgb(240, 142, 53) 32.09%,
+    rgb(236, 81, 87) 48.96%,
+    rgb(255, 24, 189) 67.94%,
+    rgb(26, 75, 255) 85.34%,
+    rgb(98, 216, 249) 99.57%
+  );
+}
+
+.Toastify__progress-bar--success {
+  @apply bg-green-500;
+}
+
+.Toastify__progress-bar--info {
+  @apply bg-blue-500;
+}
+
+.Toastify__progress-bar--warn,
+.Toastify__progress-bar--warning {
+  @apply bg-amber-500;
+}
+
+.Toastify__progress-bar--error {
+  @apply bg-red-500;
+}
+
+.VimeoContainer {
+  position: relative;
+  /* Handle aspect ratio: https://stackoverflow.com/questions/42858199/vimeo-full-width */
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
