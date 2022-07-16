@@ -6,6 +6,7 @@ import ContractMetadata from '@/components/ContractMetadata';
 import ContractMethodRunner from '@/components/ContractMethodRunner';
 import {mapAbiByFunctionType, findTokenUriItem} from '@/utils/abi';
 import {EthNetwork} from '@/utils/index';
+import ContractGallery from './ContractGallery';
 
 const keyify = (item: AbiItem) => {
   const {name, inputs = [], outputs = []} = item;
@@ -55,6 +56,10 @@ export const ContractMethods = ({
 
   return (
     <div className="my-10">
+      <div className="mb-8 rounded border bg-white p-8">
+        <ContractGallery account={account} contract={contract} />
+      </div>
+
       {!!tokenUriItem && (
         <div className="mb-8 rounded border bg-white p-8">
           <h3 className="mb-8 border-b pb-2 text-xl font-bold sm:text-2xl">
