@@ -262,8 +262,40 @@ export const ContractDebugger = ({
     } catch (e) {}
   };
 
-  if (!contract || isLoading) {
+  if (isLoading) {
+    // TODO: handle loading state
+    return null;
+  }
+
+  if (!contract && !account) {
     // TODO: show something if no contract is found? (e.g. metamask not connected?)
+    return (
+      <div className="flex min-h-full flex-auto flex-col bg-gray-50">
+        <Head>
+          <title>Contract debugger</title>
+          <meta name="description" content="Contract debugger" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+
+        <div className="mx-auto max-w-4xl p-8">
+          <button
+            className="my-24 inline-flex w-64 transform items-center justify-center rounded-full border bg-white px-6 py-3 font-bold text-gray-800 transition-all hover:text-gray-900 hover:shadow sm:w-80 md:px-8 md:py-4 md:text-base"
+            onClick={handleConnectWallet}
+          >
+            <img
+              alt="MetaMask"
+              src="/images/metamask.svg"
+              className="-ml-2 mr-3 h-5 w-5"
+            />
+            <span>Connect MetaMask</span>
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!contract) {
+    // TODO: if no contract, show error/info state
     return null;
   }
 
@@ -279,20 +311,9 @@ export const ContractDebugger = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="max-w-8xl mx-auto flex w-full items-center justify-end py-4 px-4 font-semibold sm:px-6">
-        {!account && (
-          <button
-            className="rounded-full bg-black px-6 py-4 text-center font-bold text-white transition-colors hover:bg-gray-800"
-            onClick={handleConnectWallet}
-          >
-            Connect wallet
-          </button>
-        )}
-      </nav>
-
       <main className="flex-1">
         <div className="mx-auto max-w-4xl p-4">
-          <h1 className="mb-8 border-b pb-4 text-4xl font-bold">
+          <h1 className="mt-12 mb-8 border-b pb-4 text-4xl font-bold">
             {title || defaultTitle}
           </h1>
 
