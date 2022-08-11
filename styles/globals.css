@@ -67,16 +67,6 @@ a {
   -ms-text-fill-color: transparent;
 }
 
-.Text--shadowed {
-  text-shadow: 0 1px 1px rgb(0 0 0);
-}
-
-.Text--subtitle {
-  font-family: "Trebuchet MS";
-  color: #ffaa00;
-  text-shadow: 0 2px 1px rgb(0 0 0);
-}
-
 .Background--rainbow {
   background: linear-gradient(
     110.78deg,
@@ -105,11 +95,4 @@ a {
 
 .Toastify__progress-bar--error {
   @apply bg-red-500;
-}
-
-.VimeoContainer {
-  position: relative;
-  /* Handle aspect ratio: https://stackoverflow.com/questions/42858199/vimeo-full-width */
-  padding-bottom: 56.25%;
-  overflow: hidden;
 }

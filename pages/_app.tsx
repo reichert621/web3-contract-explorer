@@ -10,13 +10,16 @@ function WrappedBaseApp({Component, pageProps}: AppProps) {
   return (
     <>
       <Head>
-        <meta property="og:title" content="TODO" key="title" />
+        <meta
+          property="og:title"
+          content="Web3 Contract Explorer"
+          key="title"
+        />
         <meta
           property="og:description"
-          content="TODO: description"
+          content="Inspect and run web3 contract methods"
           key="description"
         />
-        <meta property="og:image" content="TODO: image url" key="og-image" />
       </Head>
       <ToastContainer autoClose={8000} theme="dark" />
       <Component {...pageProps} />
