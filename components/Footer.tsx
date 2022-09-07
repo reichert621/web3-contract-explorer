@@ -48,7 +48,7 @@ export const Footer = () => {
           </a>
           <a
             className="text-gray-400 hover:text-gray-300"
-            href="https://github.com/reichert621/appointments"
+            href="https://github.com/reichert621/web3-contract-explorer"
             target="_blank"
             rel="noopener noreferrer"
           >

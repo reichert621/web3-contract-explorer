@@ -34,7 +34,7 @@ export const NavBar = () => {
                 className={
                   'hidden rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
                 }
-                href="https://github.com/reichert621/appointments"
+                href="https://github.com/reichert621/web3-contract-explorer"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -46,7 +46,7 @@ export const NavBar = () => {
           <div className="flex items-center space-x-4">
             <a
               className="inline-flex items-center rounded-md bg-gray-800 px-4 py-2 text-sm font-medium text-gray-100 transition-colors hover:bg-gray-700 hover:text-white"
-              href="https://github.com/reichert621/appointments"
+              href="https://github.com/reichert621/web3-contract-explorer"
               target="_blank"
               rel="noopener noreferrer"
             >
