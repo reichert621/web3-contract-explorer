@@ -38,7 +38,6 @@
     "typescript": "4.4.4"
   },
   "lint-staged": {
-    "hardhat/**/*.sol": "prettier --write",
     "*.{js,ts,md}": "prettier --write"
   }
 }
