@@ -271,7 +271,6 @@ export const ContractDebugger = ({
         <Head>
           <title>Contract debugger</title>
           <meta name="description" content="Contract debugger" />
-          <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <NavBar />
@@ -292,7 +291,6 @@ export const ContractDebugger = ({
         <Head>
           <title>Contract debugger</title>
           <meta name="description" content="Contract debugger" />
-          <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <NavBar />
@@ -323,7 +321,6 @@ export const ContractDebugger = ({
         <Head>
           <title>Contract debugger</title>
           <meta name="description" content="Contract debugger" />
-          <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <NavBar />
@@ -342,7 +339,6 @@ export const ContractDebugger = ({
       <Head>
         <title>Contract debugger</title>
         <meta name="description" content="Contract debugger" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <NavBar />

@@ -20,6 +20,7 @@ function WrappedBaseApp({Component, pageProps}: AppProps) {
           content="Inspect and run web3 contract methods"
           key="description"
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <ToastContainer autoClose={8000} theme="dark" />
       <Component {...pageProps} />
