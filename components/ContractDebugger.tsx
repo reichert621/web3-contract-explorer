@@ -14,6 +14,8 @@ import {
   fetchContractAbi,
   findValidNetwork,
 } from '@/utils/etherscan';
+import NavBar from '@/components/NavBar';
+import Footer from '@/components/Footer';
 
 const getHoverColorByNetwork = (network: string) => {
   switch (network) {
@@ -277,7 +279,9 @@ export const ContractDebugger = ({
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <div className="mx-auto max-w-4xl p-8">
+        <NavBar />
+
+        <div className="mx-auto max-w-4xl flex-1 p-8">
           <button
             className="my-24 inline-flex w-64 transform items-center justify-center rounded-full border bg-white px-6 py-3 font-bold text-gray-800 transition-all hover:text-gray-900 hover:shadow sm:w-80 md:px-8 md:py-4 md:text-base"
             onClick={handleConnectWallet}
@@ -290,6 +294,8 @@ export const ContractDebugger = ({
             <span>Connect MetaMask</span>
           </button>
         </div>
+
+        <Footer />
       </div>
     );
   }
@@ -310,6 +316,8 @@ export const ContractDebugger = ({
         <meta name="description" content="Contract debugger" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <NavBar />
 
       <main className="flex-1">
         <div className="mx-auto max-w-4xl p-4">
@@ -463,6 +471,8 @@ export const ContractDebugger = ({
           ) : null}
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 };

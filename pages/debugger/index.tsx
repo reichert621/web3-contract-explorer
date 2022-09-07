@@ -1,3 +1,5 @@
+import Footer from '@/components/Footer';
+import NavBar from '@/components/NavBar';
 import type {NextPage} from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -26,6 +28,8 @@ const Home: NextPage = () => {
         <title>Contract explorer</title>
         <meta name="description" content="Contract explorer home page" />
       </Head>
+
+      <NavBar />
 
       <main className="flex-1">
         <div className="mx-auto max-w-xl p-4">
@@ -91,6 +95,8 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 };
