@@ -1,8 +1,8 @@
 # Web3 Contract Explorer
 
-A simple interface for exploring and debugging Ethereum contracts. Built with NextJS, React, TypeScript, and TailwindCSS.
+A simple interface for exploring and debugging Ethereum contracts. Built with Next.js, React, TypeScript, and TailwindCSS.
 
-Live demo at [web3-contract-explorer.vercel.app](https://web3-contract-explorer.vercel.app/)
+Live demo: [web3-contract-explorer.vercel.app](https://web3-contract-explorer.vercel.app/)
 
 ## Getting Started
 
@@ -26,5 +26,3 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
