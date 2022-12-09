@@ -2,14 +2,14 @@ import {EthNetwork} from '@/utils/index';
 
 export const ETHERSCAN_API_KEY = process.env.NEXT_PUBLIC_ETHERSCAN_API_KEY;
 
-export type EtherscanTestNet = 'rinkeby' | 'ropsten';
+export type EtherscanTestNet = 'rinkeby' | 'goerli';
 
 export const isValidEtherscanTestNetwork = (
   network: string
 ): network is EtherscanTestNet => {
   switch (network) {
     case 'rinkeby':
-    case 'ropsten':
+    case 'goerli':
     case 'private':
       return true;
     default:
@@ -67,8 +67,8 @@ export const logEtherscanTransactionUrl = (
 
 const getEtherscanApiBaseUrl = (network?: string | null) => {
   switch (network) {
-    case 'ropsten':
-      return 'https://api-ropsten.etherscan.io';
+    case 'goerli':
+      return 'https://api-goerli.etherscan.io';
     case 'rinkeby':
       return 'https://api-rinkeby.etherscan.io';
     case 'main':
@@ -99,7 +99,7 @@ export const fetchContractAbi = async (
     });
 };
 
-export const VALID_ETH_NETWORKS = ['main', 'ropsten', 'rinkeby'];
+export const VALID_ETH_NETWORKS = ['main', 'goerli', 'rinkeby'];
 
 export const findValidNetwork = async (
   address: string,

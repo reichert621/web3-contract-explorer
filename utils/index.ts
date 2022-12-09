@@ -83,8 +83,8 @@ export const extractImagePreview = (data?: Record<string, string> | null) => {
 
 export const formatNetworkName = (network: string) => {
   switch (network) {
-    case 'ropsten':
-      return 'Ropsten Test Network';
+    case 'goerli':
+      return 'Goerli Test Network';
     case 'rinkeby':
       return 'Rinkeby Test Network';
     case 'main':

@@ -2,10 +2,10 @@ import React from 'react';
 
 export const NetworkBadge = ({network}: {network: string}) => {
   switch (network) {
-    case 'ropsten':
+    case 'goerli':
       return (
-        <div className="rounded bg-pink-500 px-2 py-1 text-xs text-white">
-          Ropsten Test Network
+        <div className="rounded bg-blue-500 px-2 py-1 text-xs text-white">
+          Goerli Test Network
         </div>
       );
     case 'rinkeby':

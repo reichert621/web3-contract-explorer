@@ -20,8 +20,8 @@ import {Spinner} from '@/components/Icon';
 
 const getHoverColorByNetwork = (network: string) => {
   switch (network) {
-    case 'ropsten':
-      return 'hover:text-pink-500';
+    case 'goerli':
+      return 'hover:text-blue-500';
     case 'rinkeby':
       return 'hover:text-amber-500';
     case 'private':
@@ -142,7 +142,7 @@ export const ContractDebugger = ({
 
           const updatedAbi = await fetchContractAbi(address, network);
           const contract = new web3js.eth.Contract(updatedAbi, address);
-
+          console.log('Found ABI:', updatedAbi);
           setContract(contract);
           setAbiString(JSON.stringify(updatedAbi, null, 2));
           setContractAbi(updatedAbi);
